@@ -1,4 +1,4 @@
-Required Notice: Copyright (c) 2026 Houssam Bouardi, Said Hraoui and Hakim El Fadili. All rights not expressly granted below are reserved.
+Required Notice: Copyright (c) 2026 Houssam Bouardi. All rights not expressly granted below are reserved.
 
 # PolyForm Noncommercial License 1.0.0
 
