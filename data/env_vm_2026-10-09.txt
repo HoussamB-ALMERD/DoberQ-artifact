@@ -1,0 +1,11 @@
+Fri Oct  9 06:38:32 PM UTC 2026
+Linux edge 6.8.0-142-generic #142-Ubuntu SMP PREEMPT_DYNAMIC Wed Sep  2 14:24:27 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+CPU(s):                                  2
+Model name:                              Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz
+Hypervisor vendor:                       VMware
+               total        used        free      shared  buff/cache   available
+Mem:            3867         507        2749           1         847        3360
+liboqs-python faulthandler is disabled
+/home/edge/doberq_bench_venv2/lib/python3.12/site-packages/oqs/__init__.py:1: UserWarning: liboqs version (major, minor) 0.15.0 differs from liboqs-python version 0.16.0
+  from oqs.oqs import (
+0.15.0 0.16.0 50.0.1 3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]

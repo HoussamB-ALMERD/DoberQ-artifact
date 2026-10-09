@@ -1,0 +1,25 @@
+liboqs-python faulthandler is disabled
+/home/edge/doberq_bench_venv2/lib/python3.12/site-packages/oqs/__init__.py:1: UserWarning: liboqs version (major, minor) 0.15.0 differs from liboqs-python version 0.16.0
+  from oqs.oqs import (
+liboqs version: 0.15.0
+KEM: ML-KEM-768  SIG: ML-DSA-65
+Iterations: 200  Warmup: 20  Payload sizes: [256, 512, 1024]
+
+Gateway signing public key:  1952 bytes
+Backbone KEM public key:     1184 bytes
+
+--- payload 256 B ---
+  correctness: 200/200 round trips recovered exact plaintext
+--- payload 512 B ---
+  correctness: 200/200 round trips recovered exact plaintext
+--- payload 1024 B ---
+  correctness: 200/200 round trips recovered exact plaintext
+
+Wrote 600 rows -> /home/edge/DoberMan/doberq/benchmarks/results/two_party_benchmark.csv
+
+== Two-Party wrap_flow + unwrap_flow Summary (N=200 per payload size) ==
+ Payload  Wrap mean   Wrap p95  Unwrap mean  Unwrap p95   RT mean    RT p95  Capsule B    Amp %
+    256B     0.1688     0.2687       0.1002      0.1272    0.2690    0.3988       4735  1749.6%
+    512B     0.1769     0.3161       0.1004      0.1277    0.2774    0.4231       4991   874.8%
+   1024B     0.1982     0.3668       0.1106      0.1815    0.3089    0.5076       5503   437.4%
+DONE

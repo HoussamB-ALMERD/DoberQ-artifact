@@ -1,0 +1,49 @@
+liboqs-python faulthandler is disabled
+/home/edge/doberq_bench_venv2/lib/python3.12/site-packages/oqs/__init__.py:1: UserWarning: liboqs version (major, minor) 0.15.0 differs from liboqs-python version 0.16.0
+  from oqs.oqs import (
+  Benchmarking KEM: ML-KEM-512 (20 warm-up + 200 timed iterations)
+  Benchmarking KEM: ML-KEM-768 (20 warm-up + 200 timed iterations)
+  Benchmarking KEM: ML-KEM-1024 (20 warm-up + 200 timed iterations)
+  Benchmarking DSA: ML-DSA-44 (20 warm-up + 200 timed iterations)
+  Benchmarking DSA: ML-DSA-65 (20 warm-up + 200 timed iterations)
+  Benchmarking DSA: ML-DSA-87 (20 warm-up + 200 timed iterations)
+  Benchmarking classical: RSA-2048 (20 warm-up + 200 timed iterations)
+  Benchmarking classical: ECDH-P256 (20 warm-up + 200 timed iterations)
+  Benchmarking classical: ECDH-P384 (20 warm-up + 200 timed iterations)
+  Benchmarking classical: ECDSA-P256 (20 warm-up + 200 timed iterations)
+Wrote 6200 rows → results/repeat/primitives_rep1.csv
+
+── DoberQ Benchmark Summary ────────────────────────────────────
+Algorithm                      Operation             N  Mean (ms)   p50 (ms)   p95 (ms)
+------------------------------------------------------------------------------------------
+ECDH-P256                      encapsulate         200     0.0632     0.0565     0.0885
+ECDH-P256                      keygen              200     0.0231     0.0172     0.0382
+ECDH-P384                      encapsulate         200     0.6081     0.6422     0.7693
+ECDH-P384                      keygen              200     0.2499     0.2548     0.3169
+ECDSA-P256                     keygen              200     0.0209     0.0178     0.0390
+ECDSA-P256                     sign                200     0.0437     0.0357     0.0594
+ECDSA-P256                     verify              200     0.0782     0.0709     0.1065
+ML-DSA-44                      keygen              200     0.0620     0.0619     0.1048
+ML-DSA-44                      sign                200     0.1345     0.1070     0.2799
+ML-DSA-44                      verify              200     0.0590     0.0587     0.1026
+ML-DSA-65                      keygen              200     0.1077     0.0977     0.1558
+ML-DSA-65                      sign                200     0.2311     0.2020     0.4890
+ML-DSA-65                      verify              200     0.0973     0.0901     0.1516
+ML-DSA-87                      keygen              200     0.1562     0.1425     0.2219
+ML-DSA-87                      sign                200     0.2829     0.2429     0.5546
+ML-DSA-87                      verify              200     0.1430     0.1331     0.1985
+ML-KEM-1024                    decapsulate         200     0.0562     0.0581     0.0832
+ML-KEM-1024                    encapsulate         200     0.0551     0.0553     0.0928
+ML-KEM-1024                    keygen              200     0.0564     0.0552     0.0929
+ML-KEM-512                     decapsulate         200     0.0486     0.0399     0.0918
+ML-KEM-512                     encapsulate         200     0.0469     0.0404     0.0758
+ML-KEM-512                     keygen              200     0.0460     0.0398     0.0902
+ML-KEM-768                     decapsulate         200     0.0557     0.0489     0.0957
+ML-KEM-768                     encapsulate         200     0.0545     0.0477     0.0873
+ML-KEM-768                     keygen              200     0.0541     0.0479     0.0939
+ML-KEM-768+ML-DSA-65           wrap_flow           600     0.2276     0.2037     0.4128
+RSA-2048                       decapsulate         200     1.3382     1.4151     1.8998
+RSA-2048                       encapsulate         200     0.1626     0.1540     0.2862
+RSA-2048                       keygen              200    65.8035    51.0555   156.1550
+────────────────────────────────────────────────────────────────
+
